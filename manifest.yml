@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-flask-cors-proxy
+  memory: 256MB
+  disk_quota: 256MB
+  random-route: true
+  buildpacks: 
+  - python_buildpack
+  command: python app.py
+  instances: 1
